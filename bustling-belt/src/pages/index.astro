@@ -1,0 +1,24 @@
+---
+import Layout from "../layouts/Layout.astro";
+import "animate.css";
+const { title } = Astro.props;
+// import Face from "../assets/images/face.png";
+// import { Image } from "astro:assets";
+---
+
+<!-- <Image src={Logo} alt="Københavnerbilleder bogforside" class="w-10" /> -->
+<html lang="da">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{Astro.props.title}</title>
+    <link rel="stylesheet" href="https://use.typekit.net/sow1cek.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/sow1cek.css" />
+  </head>
+
+  <body class="">
+    <Layout />
+  </body>
+</html>
